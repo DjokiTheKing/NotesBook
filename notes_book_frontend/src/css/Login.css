@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background: url("../../public/img/tirachardkumtanombg.jpg") top center / 100% 100% no-repeat;
+}
+
+.loginform {
+    position: relative;
+    top: -10%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(255, 254, 251, 0.871);
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 8px 40px 20px 40px;
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.225);
+}
+
+
+
+.inp {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.passw > a{
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 0.8rem;
+}
+
+#submit {
+    outline: none;
+    margin-top: 20px;
+    width: 12rem;
+    height: 3rem;
+    background-color: rgb(162, 203, 225);
+    color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    /* border: 2px solid rgba(106, 103, 255, 0); */
+    border: none;
+    border-radius: 3px;
+    margin-left: 1rem;
+    transition: 0.15s;
+}
+
+#submit:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+#submit:active {
+    box-shadow: inset 0px 0px 30px 30px rgba(0, 0, 0, 0.104);
+    transform: scale(1.01);
+}
+
+#signup {
+    outline: none;
+    margin-top: 20px;
+    width: 6rem;
+    height: 2rem;
+    background-color: rgb(195, 207, 131);
+    color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 600;
+    /* border: 2px solid rgb(106, 103, 255); */
+    border: none;
+    border-radius: 2px;
+    transition: 0.15s;
+}
+
+#signup:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+#signup:active {
+    box-shadow: inset 0px 0px 30px 30px rgba(0, 0, 0, 0.104);
+    transform: scale(1.01);
+}
+
+.loginform > a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: rgb(120, 7, 225);
+}
+.loginform > p {
+    display: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: rgb(189, 7, 225);
+}
+
+@media (max-width: 600px){
+    .loginform {
+        max-width: 80vw;
+        padding: 6px 20px 20px 20px;
+    }
+    .inp {
+        margin: 5px;
+        font-size: 1.1rem;
+    }
+    #submit {
+        margin-top: 15px;
+        width: 10rem;
+        height: 2.5rem;
+        font-size: 1.6rem;
+        margin-left: 0.8rem;
+    }
+    #signup {
+        margin-top: 15px;
+        width: 5.5rem;
+        height: 1.8rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .btn {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #signup {
+        margin-top: 5px;
+        width: 5.5rem;
+        height: 1.8rem;
+    }
+    #submit {
+        margin-left: 0;
+    }
+}

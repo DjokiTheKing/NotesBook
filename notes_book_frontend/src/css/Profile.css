@@ -1,0 +1,68 @@
+/* Cover */
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.profile {
+    margin-top: 90px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 30vh;
+    background: linear-gradient(to bottom right, rgb(124, 157, 187),rgb(114, 152, 187));
+    border: 1px solid rgba(0, 0, 0, 0.338);
+    border-radius: 3px;
+    width: 80%;
+    padding: 30px;
+}
+.profile > div {
+    padding: 10px;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.055);
+}
+.logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.133);
+    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.055);
+    transition: 0.3s;
+    min-width: 4rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0px 10px;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+.logout:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.logout:active {
+    cursor: pointer;
+    transform: scale(1.01);
+    box-shadow: inset 0 0 100px 100px rgba(0, 0, 0, 0.082);
+}
+
+.logout-stuff {
+    display: flex;
+    flex-direction: row;
+}
+.info{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+#footer {
+    padding: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+}

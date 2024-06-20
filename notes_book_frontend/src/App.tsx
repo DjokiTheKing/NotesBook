@@ -1,11 +1,22 @@
-import { useState } from "react";
+import About from "./components/About";
+import Home from "./components/Home";
 
-function App(){
-  let [a, setNumber] = useState(0);
-  return <div>
-    <button onClick={()=>setNumber(a+1)}>{a}</button>
-    <button onClick={()=>setNumber(a+2)}>{a}</button>
-  </div>
+import { Route, Routes } from "react-router-dom";
+import NavBar from "./components/NavBar";
+
+import './css/App.css';
+
+function App() {
+  return (
+    <div id="app_root">
+      <Routes>
+        <Route path="/" element={<NavBar />}>
+          <Route path="home" index element={<Home />}/>
+          <Route path="about" element={<About />}/>
+        </Route>
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
