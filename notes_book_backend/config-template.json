@@ -1,0 +1,12 @@
+{
+    "jwt":{
+        "key": "PLACE YOUR KEY HERE"
+    },
+    "database":{
+        "type" : "sqlite or mysql",
+        "host" : "host for mysql or filepath for sqlite",
+        "name" : "basename for mysql filename for sqlite",
+        "user" : "only for mysql",
+        "password" : "only for mysql"
+    }
+}

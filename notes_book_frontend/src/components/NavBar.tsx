@@ -1,7 +1,15 @@
-import { Link, Outlet } from "react-router-dom";
-import '../css/NavBar.css';
+import { Link, Outlet, useNavigate } from "react-router-dom";
+import createNewNote from "../supporting_stuff/createNewNote";
+import userAuth from "../supporting_stuff/userAuth";
+import { useEffect } from "react";
 
 function NavBar() {
+  let navigate = useNavigate();
+  useEffect(()=>{
+    if(!userAuth()){
+      navigate('/login');
+    }
+  });
   return (
     <div id="nav_root">
       <nav className="nav-zone nav-color sticky">
@@ -12,7 +20,9 @@ function NavBar() {
           <li>
             <Link to="/about">About</Link>
           </li>
-          <button id="new">Create New</button>
+
+          <button id="new" onClick={() => createNewNote()}>Create New</button>
+
           <li>
             <Link to="/profile">Profile</Link>
           </li>
